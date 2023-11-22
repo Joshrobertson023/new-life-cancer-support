@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="output.css">
+   <title>Document</title>
+</head>
+<body class="flex justify-start flex-col items-center pb-[200px]"> 
+   <!-- For containers, specify this: px-16 max-w-[120rem] flex flex-col items-center -->
+   <div class="bg-gray w-[100vw] flex flex-col items-center">
+      <div name="navbar" class="flex flex-col w-full px-[150px] max-w-[120rem]">
+         <div name="top" class="flex justify-between items-center py-11">
+            <div name="left" class="flex justify-between gap-11">
+               <!-- Language dropdown goes here -->
+               <p class="text-fontcolor font-bold font-header">Contact Us:</p>
+               <p class="text-fontcolor font-header">(555)555-5555</p>
+               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+               <div class="flex gap-2">
+                  <img src="/images/location-logo.png" width="15px" height="auto" alt="location icon">
+                  <p class="text-fontcolor font-header">San Antonio</p>
+   
+               </div>
+            </div>
+            <div name="right" class="flex justify-between gap-6">
+               <a href="" class="text-[#926F5B] hover:text-gray hover:bg-brown text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100">Our Church</a>
+               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
+            </div>
+         </div>
+      </div>
+      <hr class="mb-4" /> 
+      <style>
+         hr {
+            border: 0;
+            clear:both;
+            display:block;
+            width: 100%;               
+            background-color: black;
+            height: 1px;
+         }
+      </style>
+
+   </div>
+      <div name="bottomnav" id="stickyNav" class="flex w-full flex-col justify-center px-[150px] max-w-[120rem] bg-gray h-[50px]">
+         <style>
+            #stickyNav {
+               position: relative;
+               top: 0px;
+               transition: .4s;
+            }
+            #stickyNav.sticky {
+               position: sticky;
+               top: 0px;
+               box-shadow: 0 8px 10px -10px gray;
+            }
+            #stickyNav.sticky a {
+               padding-top: 5px;
+            }
+         </style>
+         <script>
+            const scrollController = document.querySelector('body');
+            const header = document.getElementById('stickyNav');
+            const navLinks = document.getElementById('navLinks');
+            window.addEventListener('scroll', () => {
+               if(window.pageYOffset >= 135)
+                  header.classList.toggle('sticky', window.scrollY > 0);
+               else
+                  header.classList.remove('sticky');
+            })
+         </script>
+         <div name="bottom" class="flex justify-between py-11">
+            <div name="left" class="">
+               <a href="" class="">
+                  <img src="/images/Church logo 1.png" width="300px" height="auto" class="" alt="logo">
+               </a>
+            </div>
+            <div id="navLinks" name="right" class="flex gap-11">
+               <a href="" class="text-fontcolor hover:text-brown duration-100">Home</a>
+               <a href="" class="text-fontcolor hover:text-brown duration-100">Schedule a Ride or Visit</a>
+               <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
+               <a href="" class="text-fontcolor hover:text-brown duration-100">Calendar</a>
+               <a href="" class="text-fontcolor hover:text-brown duration-100">Get Involved</a>
+               <a href="" class="text-fontcolor hover:text-brown duration-100">About Us</a>
+            </div>
+         </div>
+      </div>
+      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">Renew Hope. Find Strength.</h1>
+      <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center">Join our Christ-centered Cancer Support Group.</h2>
+
+   <!-- ---------- BLUE BOXES ---------- -->
+   <div class="px-[150px] max-w-[120rem] flex flex-col items-center mt-[100px]">
+      <div name="BLUE BOX" class="flex flex-wrap bg-blue rounded-xl">
+         <div class="bg-blue flex justify-center items-center w-[500px] p-8 rounded-xl">
+            <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-8 rounded-xl border-white p-8 gap-6">
+               <h1 class="text-white font-header self-center text-3xl">Get a ride to the doctor</h1>
+               <p class="text-white font-body text-center text-lg">We give rides to people who don’t have access to a ride to the doctor’s office. More text about our giving rides to people to doctor’s offices.</p>
+               <a class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer rounded">Schedule a Ride</a>
+            </div>
+         </div>
+         <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-r-xl">
+            <!-- Need to optimize this image -->
+            <img src="/images/car ride.jpg" class="object-fill" alt="person giving ride">
+         </div>
+      </div>
+   </div>
+   <div class="px-[150px] max-w-[120rem] flex flex-col items-center mt-[50px]">
+      <div name="BLUE BOX" class="flex flex-wrap bg-blue rounded-xl">
+         <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-l-xl">
+            <!-- Need to optimize this image -->
+            <img src="/images/house visit.jpg" class="object-fill" alt="visiting at home">
+         </div>
+         <div class="bg-blue flex justify-center items-center w-[500px] p-8 rounded-xl">
+            <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-8 rounded-xl border-white p-8 gap-6">
+               <h1 class="text-white font-header self-center text-3xl">Schedule a visit to your home</h1>
+               <p class="text-white font-body text-center text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam id sunt ut cumque praesentium earum, itaque quis laboriosam placeat alias aperiam, veritatis dicta deserunt modi nihil hic laudantium labore.</p>
+               <a class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Visit</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+</body>
+</html>
