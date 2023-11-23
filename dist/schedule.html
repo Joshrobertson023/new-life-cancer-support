@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="output.css">
+   <title>New Life Cancer Support Group</title>
+</head>
+<body class="flex justify-start flex-col items-center"> 
+   <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
+   <div class="bg-gray w-[100vw] flex flex-col items-center">
+      <div name="navbar" class="flex flex-col w-full px-[150px] max-w-[120rem]">
+         <div name="top" class="flex justify-between items-center py-11">
+            <div name="left" class="flex justify-between gap-11">
+               <!-- Language dropdown goes here -->
+               <p class="text-fontcolor font-bold font-header">Contact Us:</p>
+               <p class="text-fontcolor font-header">(555) 555-5555</p>
+               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+               <div class="flex gap-2">
+                  <img src="../images/location-logo.png" width="15px" height="auto" alt="location icon">
+                  <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
+   
+               </div>
+            </div>
+            <div name="right" class="flex justify-between gap-6">
+               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-gray hover:bg-brown text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
+               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
+            </div>
+         </div>
+      </div>
+      <hr class="mb-4" /> 
+      <style>
+         hr {
+            border: 0;
+            clear:both;
+            display:block;
+            width: 100%;               
+            background-color: black;
+            height: 1px;
+         }
+      </style>
+
+   </div>
+      <div name="bottomnav" id="stickyNav" class="flex w-full flex-col justify-center px-[150px] max-w-[120rem] bg-gray h-[50px]">
+         <style>
+            #stickyNav {
+               position: relative;
+               top: 0px;
+               transition: .4s;
+            }
+            #stickyNav.sticky {
+               position: sticky;
+               top: 0px;
+               box-shadow: 0 8px 10px -10px gray;
+            }
+            #stickyNav.sticky a {
+               padding-top: 5px;
+            }
+         </style>
+         <script>
+            const scrollController = document.querySelector('body');
+            const header = document.getElementById('stickyNav');
+            const navLinks = document.getElementById('navLinks');
+            window.addEventListener('scroll', () => {
+               if(window.pageYOffset >= 135)
+                  header.classList.toggle('sticky', window.scrollY > 0);
+               else
+                  header.classList.remove('sticky');
+            })
+         </script>
+         <div name="bottom" class="flex justify-between py-11">
+            <div name="left" class="">
+               <a href="index.html" class="">
+                  <img src="../images/Church logo 1.png" width="300px" height="auto" class="ml-[-15px]" alt="logo">
+               </a>
+            </div>
+            <div id="navLinks" name="right" class="flex gap-11">
+               <a href="index.html" class="text-fontcolor hover:text-brown duration-100">Home</a>
+               <a href="about.html" class="text-fontcolor hover:text-brown duration-100">About Us</a>
+               <a href="" class="text-fontcolor hover:text-brown duration-100">Schedule a Ride or Visit</a>
+               <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
+               <a href="calendar.html" class="text-fontcolor hover:text-brown duration-100">Calendar</a>
+               <a href="getinvolved.html" class="text-fontcolor hover:text-brown duration-100">Get Involved</a>
+            </div>
+         </div>
+      </div>
+      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">Schedule a Ride or Visit</h1>
+      <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center"></h2>
+
+      <div class="flex gap-16 w-[50%] justify-center items-center">
+         <a href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor my-[100px] text-2xl font-header flex justify-center items-center w-[30%] h-[200px] border-4 border-blue">Book a Ride</a>
+         <a href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor my-[100px] text-2xl font-header flex justify-center items-center w-[30%] h-[200px] border-4 border-blue">Schedule a Visit</a>
+      </div>
