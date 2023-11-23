@@ -10,7 +10,7 @@
    <title>Document</title>
 </head>
 <body class="flex justify-start flex-col items-center pb-[200px]"> 
-   <!-- For containers, specify this: px-16 max-w-[120rem] flex flex-col items-center -->
+   <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
    <div class="bg-gray w-[100vw] flex flex-col items-center">
       <div name="navbar" class="flex flex-col w-full px-[150px] max-w-[120rem]">
          <div name="top" class="flex justify-between items-center py-11">
@@ -20,13 +20,13 @@
                <p class="text-fontcolor font-header">(555)555-5555</p>
                <p class="text-fontcolor font-header">examplemail@gmail.com</p>
                <div class="flex gap-2">
-                  <img src="/images/location-logo.png" width="15px" height="auto" alt="location icon">
-                  <p class="text-fontcolor font-header">San Antonio</p>
+                  <img src="../images/location-logo.png" width="15px" height="auto" alt="location icon">
+                  <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
    
                </div>
             </div>
             <div name="right" class="flex justify-between gap-6">
-               <a href="" class="text-[#926F5B] hover:text-gray hover:bg-brown text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100">Our Church</a>
+               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-gray hover:bg-brown text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
                <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
             </div>
          </div>
@@ -74,21 +74,21 @@
          <div name="bottom" class="flex justify-between py-11">
             <div name="left" class="">
                <a href="" class="">
-                  <img src="/images/Church logo 1.png" width="300px" height="auto" class="" alt="logo">
+                  <img src="../images/Church logo 1.png" width="300px" height="auto" class="ml-[-15px]" alt="logo">
                </a>
             </div>
             <div id="navLinks" name="right" class="flex gap-11">
                <a href="" class="text-fontcolor hover:text-brown duration-100">Home</a>
+               <a href="" class="text-fontcolor hover:text-brown duration-100">About Us</a>
                <a href="" class="text-fontcolor hover:text-brown duration-100">Schedule a Ride or Visit</a>
                <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
                <a href="" class="text-fontcolor hover:text-brown duration-100">Calendar</a>
                <a href="" class="text-fontcolor hover:text-brown duration-100">Get Involved</a>
-               <a href="" class="text-fontcolor hover:text-brown duration-100">About Us</a>
             </div>
          </div>
       </div>
-      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">Renew Hope. Find Strength.</h1>
-      <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center">Join our Christ-centered Cancer Support Group.</h2>
+      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">Join the New Life Cancer Support Group</h1>
+      <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center">Serving and guiding you through Biblical counseling</h2>
 
    <!-- ---------- BLUE BOXES ---------- -->
    <div class="px-[150px] max-w-[120rem] flex flex-col items-center mt-[100px]">
@@ -102,7 +102,7 @@
          </div>
          <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-r-xl">
             <!-- Need to optimize this image -->
-            <img src="/images/car ride.jpg" class="object-fill" alt="person giving ride">
+            <img src="../images/car ride.jpg" class="object-fill" alt="person giving ride">
          </div>
       </div>
    </div>
@@ -110,7 +110,7 @@
       <div name="BLUE BOX" class="flex flex-wrap bg-blue rounded-xl">
          <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-l-xl">
             <!-- Need to optimize this image -->
-            <img src="/images/house visit.jpg" class="object-fill" alt="visiting at home">
+            <img src="../images/house visit.jpg" class="object-fill" alt="visiting at home">
          </div>
          <div class="bg-blue flex justify-center items-center w-[500px] p-8 rounded-xl">
             <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-8 rounded-xl border-white p-8 gap-6">
@@ -122,5 +122,61 @@
       </div>
    </div>
    
+   <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Our cancer support group gathers monthly</h1>
+   <p class="text-fontcolor font-body text-center text-lg w-[35%] mt-10">Anyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
+   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">About our group <img src="../images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   <style>
+      .arrow {
+         transition: .3s ease;
+      }
+      .link:hover .arrow {
+         transform: translateX(5px);
+      }
+   </style>
+
+   <!-- Events section -->
+   <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Upcoming events</h1>
+   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="../images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   
+   <div name="EVENTS CONTAINER" class="px-[150px] max-w-[120rem] mt-[50px]">
+      <div class="flex justify-center items-center gap-11 flex-wrap">
+         <div id="CARD" class="flex flex-col shrink-0  grow-0 basis-[400px] bg-gray" bg-gray">
+            <div name="IMAGE" class="flex w-[100%] h-[200px]">
+               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+            </div>
+            <div name="TEXT" class="w-[100%] p-11">
+               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+            </div>
+         </div>
+         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px] bg-gray">
+            <div name="IMAGE" class="flex w-[100%] h-[100px]">
+               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+            </div>
+            <div name="TEXT" class="w-[100%] px-14">
+               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+            </div>
+         </div>
+         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px] bg-gray">
+            <div name="IMAGE" class="flex w-[100%] h-[100px]">
+               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+            </div>
+            <div name="TEXT" class="w-[100%] px-14">
+               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <style>
+      #CARD {
+         box-shadow: 1px 1px 17px -1px rgba(0,0,0,0.44);
+      }
+   </style>
+
 </body>
 </html>
