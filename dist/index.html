@@ -7,7 +7,7 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="output.css">
-   <title>Document</title>
+   <title>New Life Cancer Support Group</title>
 </head>
 <body class="flex justify-start flex-col items-center pb-[200px]"> 
    <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
@@ -17,7 +17,7 @@
             <div name="left" class="flex justify-between gap-11">
                <!-- Language dropdown goes here -->
                <p class="text-fontcolor font-bold font-header">Contact Us:</p>
-               <p class="text-fontcolor font-header">(555)555-5555</p>
+               <p class="text-fontcolor font-header">(555) 555-5555</p>
                <p class="text-fontcolor font-header">examplemail@gmail.com</p>
                <div class="flex gap-2">
                   <img src="../images/location-logo.png" width="15px" height="auto" alt="location icon">
@@ -137,46 +137,85 @@
    <!-- Events section -->
    <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Upcoming events</h1>
    <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="../images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+
+   <style>
+      #eventImg {
+         object-fit: contain;
+      }
+   </style>
    
-   <div name="EVENTS CONTAINER" class="px-[150px] max-w-[120rem] mt-[50px]">
+   <div name="EVENTS CONTAINER" class="px-[100px] max-w-[120rem] mt-[50px]">
       <div class="flex justify-center items-center gap-11 flex-wrap">
-         <div id="CARD" class="flex flex-col shrink-0  grow-0 basis-[400px] bg-gray" bg-gray">
-            <div name="IMAGE" class="flex w-[100%] h-[200px]">
-               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+         <div id="CARD" class="flex flex-col shrink-0  grow-0 basis-[400px]" bg-gray">
+            <div name="IMAGE" class="flex w-[100%] h-[150px]">
+               <img id="eventImg" src="../images/placeholder.jpg" alt="placeholder image" class="">
             </div>
             <div name="TEXT" class="w-[100%] p-11">
-               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+               <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
             </div>
          </div>
-         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px] bg-gray">
-            <div name="IMAGE" class="flex w-[100%] h-[100px]">
-               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px]">
+            <div name="IMAGE" class="flex w-[100%] h-[150px]">
+               <img id="eventImg" src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
             </div>
-            <div name="TEXT" class="w-[100%] px-14">
-               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+            <div name="TEXT" class="w-[100%] p-11">
+               <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
             </div>
          </div>
-         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px] bg-gray">
-            <div name="IMAGE" class="flex w-[100%] h-[100px]">
-               <img src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
+         <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px]">
+            <div name="IMAGE" class="flex w-[100%] h-[150px]">
+               <img id="eventImg" src="../images/placeholder.jpg" alt="placeholder image" class="object-fill">
             </div>
-            <div name="TEXT" class="w-[100%] px-14">
-               <h1 class="text-fontcolor font-header font-medium text-center text-2xl flex justify-center items-start">Event Title</h1>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event time and location</p>
-               <p class="text-fontcolor font-body text-center text-lg mt-10">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
+            <div name="TEXT" class="w-[100%] p-11">
+               <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event time and location</p>
+               <p class="text-fontcolor font-body text-center text-lg mt-5">Event description. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et quasi alias, omnis asperiores vero ad, incidunt sapiente ea, corporis voluptates sint. Eligendi ad, repellat itaque in quod perferendis aut!</p>
             </div>
          </div>
       </div>
    </div>
    <style>
       #CARD {
-         box-shadow: 1px 1px 17px -1px rgba(0,0,0,0.44);
+         box-shadow: 0px 1px 31px 2px rgba(0,0,0,0.14);
       }
    </style>
+
+   <!-- Footer -->
+   <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
+   <div class="bg-gray w-[100vw] flex flex-col items-center mt-[100px]">
+      <div name="footer" class="flex w-full px-[210px] max-w-[120rem] py-[50px] justify-between">
+         <div name="left" class="flex flex-col w-[350px]">
+            <img src="../images/Church logo 1.png" width="300px" height="auto" alt="church logo">
+            <div class="flex gap-5">
+               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-gray hover:bg-brown mt-6 text-[16px] h-10 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
+               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[18px] h-10 bg-brown hover:bg-gray mt-6 border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
+            </div>
+            <div class="flex gap-5 mt-6">
+               <p class="text-fontcolor font-header w-[130px]">(555) 555-5555</p>
+               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+            </div>
+            <div class="flex flex-col gap-2 mt-6">
+               <p class="text-fontcolor font-header mt-4">7:00 PM 3rd Monday of each month</p>
+               <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">New Life Baptist Church location</a>
+            </div>
+         </div>
+         <div name="right" class="flex flex-col w-[370px]">
+            <h1 class="text-fontcolor font-header font-medium text-3xl">Sign up for updates</h1>
+            <p class="text-fontcolor font-header mt-6">Sign up to receive news and important udpates</p>
+            <form class="flex flex-col w-[350px]">
+               <label class="text-fontcolor font-header mt-6 font-bold">Name</label>
+               <input class="h-5 p-4 border-[#BBC8D4] border-2" type="text" title="name" placeholder="Enter your name" required>
+               <label class="text-fontcolor font-header mt-6 font-bold">Email</label>
+               <input class="h-5 p-4 border-[#BBC8D4] border-2" type="email" title="email" placeholder="Enter your email" required>
+               <button type="submit" class="text-[#FFFFFF] hover:text-[#926F5B] w-[125px] text-[18px] h-9 bg-brown hover:bg-gray mt-6 border-brown border-[3px] px-7 rounded duration-100">Sign up</button>
+            </form>
+         </div>
+      </div>
+   </div>
 
 </body>
 </html>
