@@ -7,7 +7,7 @@ module.exports = {
       'brown': '#C7A08A',
       'blue': '#7E9299',
       'fontcolor': '#545454',
-      'white': '#FFFFFF',
+      'white': '#E6E6E6',
     },
     fontFamily: {
       'body': 'Lato',

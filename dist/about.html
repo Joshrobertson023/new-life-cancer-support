@@ -17,8 +17,8 @@
             <div name="left" class="flex justify-between gap-11">
                <!-- Language dropdown goes here -->
                <p class="text-fontcolor font-bold font-header">Contact Us:</p>
-               <p class="text-fontcolor font-header">(555) 555-5555</p>
-               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+               <p class="text-fontcolor font-header">(210) 658-1972</p>
+               <p class="text-fontcolor font-header">staff@nlbconverse.com</p>
                <div class="flex gap-2">
                   <img src="../images/location-logo.png" width="15px" height="auto" alt="location icon">
                   <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
@@ -31,7 +31,7 @@
             </div>
          </div>
       </div>
-      <hr class="mb-4" /> 
+      <hr class="" /> 
       <style>
          hr {
             border: 0;
@@ -44,48 +44,112 @@
       </style>
 
    </div>
-      <div name="bottomnav" id="stickyNav" class="flex w-full flex-col justify-center px-[150px] max-w-[120rem] bg-gray h-[50px]">
-         <style>
-            #stickyNav {
-               position: relative;
-               top: 0px;
-               transition: .4s;
-            }
-            #stickyNav.sticky {
-               position: sticky;
-               top: 0px;
-               box-shadow: 0 8px 10px -10px gray;
-            }
-            #stickyNav.sticky a {
-               padding-top: 5px;
-            }
-         </style>
-         <script>
-            const scrollController = document.querySelector('body');
-            const header = document.getElementById('stickyNav');
-            const navLinks = document.getElementById('navLinks');
-            window.addEventListener('scroll', () => {
-               if(window.pageYOffset >= 135)
-                  header.classList.toggle('sticky', window.scrollY > 0);
-               else
-                  header.classList.remove('sticky');
-            })
-         </script>
-         <div name="bottom" class="flex justify-between py-11">
-            <div name="left" class="">
-               <a href="index.html" class="">
-                  <img src="../images/Church logo 1.png" width="300px" height="auto" class="ml-[-15px]" alt="logo">
-               </a>
-            </div>
-            <div id="navLinks" name="right" class="flex gap-11">
-               <a href="index.html" class="text-fontcolor hover:text-brown duration-100">Home</a>
-               <a href="" class="text-fontcolor hover:text-brown duration-100">About Us</a>
-               <a href="schedule.html" class="text-fontcolor hover:text-brown duration-100">Schedule a Ride or Visit</a>
-               <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
-               <a href="calendar.html" class="text-fontcolor hover:text-brown duration-100">Calendar</a>
-               <a href="getinvolved.html" class="text-fontcolor hover:text-brown duration-100">Get Involved</a>
-            </div>
+   <div name="bottomnav" id="stickyNav" class="flex w-full flex-col justify-center px-[150px] max-w-[120rem] h-[50px]">
+      <style>
+         #stickyNav {
+            position: relative;
+            top: 0px;
+            transition: .4s;
+         }
+         #stickyNav a {
+            margin-top: 7px;
+         }
+         #stickyNav.sticky {
+            position: sticky;
+            top: 0px;
+            box-shadow: 0 8px 10px -10px gray;
+            background-color: #ECECEC;
+            padding-top: 0;
+         }
+         #stickyNav.sticky a {
+            color: black;
+            transition: .1s;
+            margin-top: 7px;
+         }
+         #stickyNav.sticky img {
+            filter: brightness(.2);
+         }
+         #stickyNav.sticky a:hover {
+            color: #C7A08A;
+         }
+      </style>
+      <script>
+         const scrollController = document.querySelector('body');
+         const header = document.getElementById('stickyNav');
+         const navLinks = document.getElementById('navLinks');
+         window.addEventListener('scroll', () => {
+            if(window.pageYOffset >= 135)
+               header.classList.toggle('sticky', window.scrollY > 0);
+            else
+               header.classList.remove('sticky');
+         })
+      </script>
+      <div name="bottom" class="flex justify-between">
+         <div name="left" class="">
+            <a href="index.html" class="">
+               <img src="../images/white-logo.png" width="300px" height="auto" class="" alt="logo">
+            </a>
+         </div>
+         <div id="navLinks" name="right" class="flex gap-11">
+            <a href="index.html" class="text-white hover:text-brown duration-100">Home</a>
+            <a href="" class="text-white hover:text-brown duration-100">About Us</a>
+            <a href="schedule.html" class="text-white hover:text-brown duration-100">Schedule a Ride or Visit</a>
+            <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
+            <a href="calendar.html" class="text-white hover:text-brown duration-100">Calendar</a>
+            <a href="getinvolved.html" class="text-white hover:text-brown duration-100">Get Involved</a>
          </div>
       </div>
-      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">About Us</h1>
-      <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center"></h2>
+   </div>
+   <div id="background-image" class="w-[100%] h-[700px] object-cover mt-[-50px]">
+      <style>
+         #background-image {
+            background-image: url("/images/aboutusimage.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+      </style>
+         <h1 class="text-white font-header self-center text-4xl items-center h-[95%] pb-1 w-[100%] flex justify-center">About Us</h1>
+   </div>
+   <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">Purpose of this support team</h1>
+   <p class="text-fontcolor font-body text-lg w-[800px] mt-10">For many human problems, there are no easy answers or easy cures. Even after the best professional help has been obtained, a person might be left with difficulties too great to handle alone. In this situation, millions of people have found much needed personal support in mutual help groups. It is in these groups, whose members share common concerns, they are offered an important aid to recovery, understanding and the help of others who have gone through similar experiences.</p>
+   <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">What is mutual support?</h1>
+   <p class="text-fontcolor font-body text-lg w-[800px] mt-10">Mutual help has been a mainstay of life for as long as families have existed. As social beings, all of us need to be accepted, cared for, and emotionally supported. We also find it satisfying to care for and support those around us with the most natural mutual-support network which is made up of our families and friends. We establish the one-to-one contact so important to our well-being.
+      The supportive relationships we establish with family and friends, however, constitute only some of the interpersonal networks that help sustain us through life. We tend to associate with others who have similar interests and beliefs. Members benefit from our shared identity and a sense of common purpose. Through combined efforts, the team can often promote or accomplish what the individual cannot. Each member’s presence and participation adds to the strength of the group.</p>
+      <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">Why the need for mutual support?</h1>
+      <p class="text-fontcolor font-body text-lg w-[800px] mt-10">The 21st century has produced social changes which affect our traditional patterns of support. Living in a highly mobile society, we might not enjoy the benefits of a permanent community. Families who were once close, are now separated by distance. The emotional and practical support they gave is no longer available and might not be forthcoming from neighbors and friends.</p>
+      <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">What is the purpose of support?</h1>
+      <p class="text-fontcolor font-body text-lg w-[800px] mt-10">The underlying purpose: to provide emotional support and practical help in dealing with a problem common to all members. There is a special bond among people who share the same troubling experience; it begins when one person says to another, “I know just how you feel.” Knowing that someone else truly understands one’s feelings by virtue of having “been there” brings a sense of relief; one’s pain is no longer a burden borne alone. The support group provides and atmosphere of acceptance that encourages members to share their sorrows, fears, and frustrations. They can then begin to view their problems more objectively, and find more effective coping strategies.
+         The important thing to realize is that this support team is here for you, and can reassure you that you are not alone. There are others who understand what you are going through and are eager to share their experience and support with you.</p>
+   <!-- Footer -->
+   <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
+   <div class="bg-gray w-[100vw] flex flex-col items-center mt-[100px]">
+      <div name="footer" class="flex w-full px-[210px] max-w-[120rem] py-[50px] justify-between">
+         <div name="left" class="flex flex-col w-[350px]">
+            <img src="../images/Church logo 1.png" width="300px" height="auto" alt="church logo">
+            <div class="flex gap-5">
+               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-gray hover:bg-brown mt-6 text-[16px] h-10 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
+               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[18px] h-10 bg-brown hover:bg-gray mt-6 border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
+            </div>
+            <div class="flex gap-5 mt-6">
+               <p class="text-fontcolor font-header w-[130px]">(555) 555-5555</p>
+               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+            </div>
+            <div class="flex flex-col gap-2 mt-6">
+               <p class="text-fontcolor font-header mt-4">7:00 PM 3rd Monday of each month</p>
+               <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">New Life Baptist Church location</a>
+            </div>
+         </div>
+         <div name="right" class="flex flex-col w-[370px]">
+            <h1 class="text-fontcolor font-header font-medium text-3xl">Sign up for updates</h1>
+            <p class="text-fontcolor font-header mt-6">Sign up to receive news and important udpates</p>
+            <form class="flex flex-col w-[350px]">
+               <label class="text-fontcolor font-header mt-6 font-bold">Name</label>
+               <input class="h-5 p-4 border-[#BBC8D4] border-2" type="text" title="name" placeholder="Enter your name" required>
+               <label class="text-fontcolor font-header mt-6 font-bold">Email</label>
+               <input class="h-5 p-4 border-[#BBC8D4] border-2" type="email" title="email" placeholder="Enter your email" required>
+               <button type="submit" class="text-[#FFFFFF] hover:text-[#926F5B] w-[125px] text-[18px] h-9 bg-brown hover:bg-gray mt-6 border-brown border-[3px] px-7 rounded duration-100">Sign up</button>
+            </form>
+         </div>
+      </div>
+   </div>
