@@ -63,14 +63,30 @@
          }
          #stickyNav.sticky a {
             color: black;
-            transition: .1s;
             margin-top: 7px;
+            border-bottom: #545454;
+         }
+         #stickyNav.sticky .dropdown-content a:hover {
+            color: black;
+            margin-top: 7px;
+            border: 0;
+         }
+         #stickyNav.sticky .dropdown-content a {
+            color: black;
+            margin-top: 7px;
+            border: 0;
+         }
+         #stickyNav.sticky .active {
+            border-bottom: 3px solid #545454;
          }
          #stickyNav.sticky img {
             filter: brightness(.2);
          }
+         #stickyNav.sticky .dropbtn {
+            color: black;
+         }
          #stickyNav.sticky a:hover {
-            color: #C7A08A;
+            border-bottom: 3px solid #545454;
          }
       </style>
       <script>
@@ -91,19 +107,52 @@
             </a>
          </div>
          <div id="navLinks" name="right" class="flex gap-11">
-            <a href="index.html" class="text-white hover:text-brown duration-100">Home</a>
-            <a href="" class="text-white hover:text-brown duration-100">About Us</a>
-            <a href="schedule.html" class="text-white hover:text-brown duration-100">Schedule a Ride or Visit</a>
+            <a href="index.html" class="text-white hover:border-b-[3px] hover:border-b-white">Home</a>
+            <a href="about.html" class="text-white border-b-[3px] border-b-white active">About Us</a>
+            <a href="calendar.html" class="text-white hover:border-b-[3px] hover:border-b-white">Calendar</a>
+            <a href="getinvolved.html" class="text-white hover:border-b-[3px] hover:border-b-white">Get Involved</a>
+            <div class="dropdown">
+               <button href="schedule.html" class=" dropbtn text-white flex items-center gap-2 mt-[7px]" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="../images/white-icon.png"></button>
+               <div class="dropdown-content bg-gray">
+                  <a target="_blank" href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor duration-100">Ride</a>
+                  <a target="_blank" href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-fontcolor duration-100">Visit</a>
+               </div>
+               <style>
+                  /* #navBottom {
+                     overflow:hidden;
+                  }
+                  .dropdown {
+                     overflow:hidden;
+                  } */
+                  .dropdown-content {
+                     display: none;
+                     position: absolute;
+                     background-color: #ECECEC;
+                     min-width: 195px;
+                     z-index: 1;
+                  }
+                  .dropdown-content a:hover {
+                     background-color: #cecece;
+                  }
+                  .dropdown:hover .dropdown-content {
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: start;
+                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                     padding-bottom: 7px;
+                     padding-left: 5px;
+                     padding-right: 5px;
+                  }
+               </style>
+            </div>
             <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
-            <a href="calendar.html" class="text-white hover:text-brown duration-100">Calendar</a>
-            <a href="getinvolved.html" class="text-white hover:text-brown duration-100">Get Involved</a>
          </div>
       </div>
    </div>
    <div id="background-image" class="w-[100%] h-[700px] object-cover mt-[-50px]">
       <style>
          #background-image {
-            background-image: url("/images/aboutusimage.jpg");
+            background-image: url("../images/aboutusimage.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -111,6 +160,8 @@
       </style>
          <h1 class="text-white font-header self-center text-4xl items-center h-[95%] pb-1 w-[100%] flex justify-center">About Us</h1>
    </div>
+   <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">Our Staff</h1>
+   <p class="text-fontcolor font-body text-lg w-[800px] mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ad itaque, ipsa quod esse perspiciatis et. Dolores architecto harum, fuga voluptatibus, consectetur, cumque quidem cupiditate explicabo odio nulla beatae amet?</p>
    <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">Purpose of this support team</h1>
    <p class="text-fontcolor font-body text-lg w-[800px] mt-10">For many human problems, there are no easy answers or easy cures. Even after the best professional help has been obtained, a person might be left with difficulties too great to handle alone. In this situation, millions of people have found much needed personal support in mutual help groups. It is in these groups, whose members share common concerns, they are offered an important aid to recovery, understanding and the help of others who have gone through similar experiences.</p>
    <h1 class="text-fontcolor font-header font-medium mt-[50px] text-4xl flex w-[800px]">What is mutual support?</h1>

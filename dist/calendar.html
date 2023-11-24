@@ -78,12 +78,43 @@
                </a>
             </div>
             <div id="navLinks" name="right" class="flex gap-11">
-               <a href="index.html" class="text-fontcolor hover:text-brown duration-100">Home</a>
-               <a href="about.html" class="text-fontcolor hover:text-brown duration-100">About Us</a>
-               <a href="schedule.html" class="text-fontcolor hover:text-brown duration-100">Schedule a Ride or Visit</a>
+               <a href="index.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Home</a>
+               <a href="about.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">About Us</a>
+               <a href="calendar.html" class="text-fontcolor border-b-[3px] border-b-fontcolor">Calendar</a>
+               <a href="getinvolved.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a>
+               <div class="dropdown">
+                  <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="../images/line-angle-down-icon.png"></button>
+                  <div class="dropdown-content bg-gray">
+                     <a target="_blank" href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor duration-100 mb-[5px]">Ride</a>
+                     <a target="_blank" href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-fontcolor duration-100">Visit</a>
+                  </div>
+                  <style>
+                     /* #navBottom {
+                        overflow:hidden;
+                     }
+                     .dropdown {
+                        overflow:hidden;
+                     } */
+                     .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #ECECEC;
+                        min-width: 195px;
+                        z-index: 1;
+                     }
+                     .dropdown-content a:hover {
+                     background-color: #cecece;
+                     }
+                     .dropdown:hover .dropdown-content {
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: start;
+                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                     padding: 10px 5px;
+                     }
+                  </style>
+               </div>
                <!-- <a href="" class="text-fontcolor hover:text-brown duration-100">House Visits</a> -->
-               <a href="calendar.html" class="text-fontcolor hover:text-brown duration-100">Calendar</a>
-               <a href="getinvolved.html" class="text-fontcolor hover:text-brown duration-100">Get Involved</a>
             </div>
          </div>
       </div>
