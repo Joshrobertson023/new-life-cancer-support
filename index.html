@@ -20,7 +20,7 @@
                <p class="text-fontcolor font-header">(210) 658-1972</p>
                <p class="text-fontcolor font-header">staff@nlbconverse.com</p>
                <div class="flex gap-2">
-                  <img src="/images/location-logo.png" width="15px" height="auto" alt="location icon">
+                  <img src="./images/location-logo.png" width="15px" height="auto" alt="location icon">
                   <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
    
                </div>
@@ -60,6 +60,9 @@
                #stickyNav.sticky a {
                   padding-top: 5px;
                }
+               #stickyNav.sticky .dropdown button {
+                  margin-top: 5px;
+               }
             </style>
             <script>
                const scrollController = document.querySelector('body');
@@ -75,7 +78,7 @@
             <div id="navBottom" class="flex justify-between py-11">
                <div name="left" class="">
                   <a href="" class="">
-                     <img src="/images/Church logo 1.png" width="300px" height="auto" class="ml-[-15px]" alt="logo">
+                     <img src="./images/Church logo 1.png" width="300px" height="auto" class="ml-[-15px]" alt="logo">
                   </a>
                </div>
                <div id="navLinks" name="right" class="flex gap-11">
@@ -84,7 +87,7 @@
                   <a href="calendar.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Calendar</a>
                   <a href="getinvolved.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a>
                   <div class="dropdown">
-                     <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="/images/line-angle-down-icon.png"></button>
+                     <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
                      <div class="dropdown-content bg-gray">
                         <a target="_blank" href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor duration-100 mb-[5px]">Ride</a>
                         <a target="_blank" href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-fontcolor duration-100">Visit</a>
@@ -135,7 +138,7 @@
          </div>
          <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-r-xl">
             <!-- Need to optimize this image -->
-            <img src="/images/car ride.jpg" class="object-fill" alt="person giving ride">
+            <img src="./images/car ride.jpg" class="object-fill" alt="person giving ride">
          </div>
       </div>
    </div>
@@ -143,7 +146,7 @@
       <div name="BLUE BOX" class="flex flex-wrap bg-blue rounded-xl">
          <div name="IMG" class=" w-[500px] h-[50%] overflow-hidden place-content-center rounded-l-xl">
             <!-- Need to optimize this image -->
-            <img src="/images/house visit.jpg" class="object-fill" alt="visiting at home">
+            <img src="./images/house visit.jpg" class="object-fill" alt="visiting at home">
          </div>
          <div class="bg-blue flex justify-center items-center w-[500px] p-8 rounded-xl">
             <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-8 rounded-xl border-white p-8 gap-6">
@@ -157,7 +160,7 @@
    
    <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Our cancer support group gathers monthly</h1>
    <p class="text-fontcolor font-body text-center text-lg w-[35%] mt-10">Anyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
-   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">About our group <img src="/images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">About our group <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
    <style>
       .arrow {
          transition: .3s ease;
@@ -169,7 +172,7 @@
 
    <!-- Events section -->
    <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Upcoming events</h1>
-   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="calendar.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="/images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="calendar.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
 
    <style>
       #eventImg {
@@ -181,7 +184,7 @@
       <div class="flex justify-center items-center gap-11 flex-wrap">
          <div id="CARD" class="flex flex-col shrink-0  grow-0 basis-[400px]" bg-gray">
             <div name="IMAGE" class="flex w-[100%] h-[150px]">
-               <img id="eventImg" src="/images/placeholder.jpg" alt="placeholder image" class="">
+               <img id="eventImg" src="./images/placeholder.jpg" alt="placeholder image" class="">
             </div>
             <div name="TEXT" class="w-[100%] p-11">
                <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
@@ -191,7 +194,7 @@
          </div>
          <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px]">
             <div name="IMAGE" class="flex w-[100%] h-[150px]">
-               <img id="eventImg" src="/images/placeholder.jpg" alt="placeholder image" class="object-fill">
+               <img id="eventImg" src="./images/placeholder.jpg" alt="placeholder image" class="object-fill">
             </div>
             <div name="TEXT" class="w-[100%] p-11">
                <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
@@ -201,7 +204,7 @@
          </div>
          <div id="CARD" class="flex flex-col shrink-0 grow-0 basis-[400px]">
             <div name="IMAGE" class="flex w-[100%] h-[150px]">
-               <img id="eventImg" src="/images/placeholder.jpg" alt="placeholder image" class="object-fill">
+               <img id="eventImg" src="./images/placeholder.jpg" alt="placeholder image" class="object-fill">
             </div>
             <div name="TEXT" class="w-[100%] p-11">
                <h1 class="text-fontcolor font-header font-medium text-center text-3xl flex justify-center items-start">Event Title</h1>
@@ -222,7 +225,7 @@
    <div class="bg-gray w-[100vw] flex flex-col items-center mt-[100px]">
       <div name="footer" class="flex w-full px-[210px] max-w-[120rem] py-[50px] justify-between">
          <div name="left" class="flex flex-col w-[350px]">
-            <img src="/images/Church logo 1.png" width="300px" height="auto" alt="church logo">
+            <img src="./images/Church logo 1.png" width="300px" height="auto" alt="church logo">
             <div class="flex gap-5">
                <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-gray hover:bg-brown mt-6 text-[16px] h-10 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
                <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[18px] h-10 bg-brown hover:bg-gray mt-6 border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
