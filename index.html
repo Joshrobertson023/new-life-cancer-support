@@ -7,75 +7,10 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="output.css">
-   <script src="https://apis.google.com/js/api.js"></script>
-   <!-- <script src="script.js" defer></script> -->
    <title>New Life Cancer Support Group</title>
 </head>
 <body class="flex justify-start flex-col items-center"> 
    <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
-   <script type="text/javascript">
-      // API key from the Developer Console
-      var API_KEY = 'AIzaSyBR4XhDRo9YJovzOhHEcj4pj8GR6DlD__w';
-
-      // Array of API discovery doc URLs for APIs used by the quickstart
-      var DISCOVERY_DOCS =
-        ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
-
-      var CALENDAR_ID = 'en.usa#holiday@group.v.calendar.google.com';
-
-
-      function start() {
-        gapi.client.init({
-          'apiKey': API_KEY,
-          'discoveryDocs': DISCOVERY_DOCS,
-        }).then(function() {
-          listUpcomingEvents();
-        });
-      }
-
-      function onLoad() {
-        gapi.load('client', start);
-      }
-
-      /**
-       * Displays a list of events from the public calendar.
-       * You'll need to tweak the rest to show the data you like.
-       */
-
-      function appendPre(message) {
-        var pre = document.getElementById('content');
-        var textContent = document.createTextNode(message + '\n');
-        pre.appendChild(textContent);
-      }
-
-      function listUpcomingEvents() {
-        gapi.client.calendar.events.list({
-          'calendarId': CALENDAR_ID,
-          'timeMin': (new Date()).toISOString(),
-          'showDeleted': false,
-          'singleEvents': true,
-          'orderBy': 'startTime'
-        }).then(function(response) {
-          var events = response.result.items;
-          appendPre('Upcoming holidays:');
-          if (events.length > 0) {
-            for (i = 0; i < events.length; i++) {
-              var event = events[i];
-              var when = event.start.dateTime;
-              if (!when) {
-                when = event.start.date;
-              }
-              appendPre(event.summary + ' (' + when + ')');
-            }
-          } else {
-            appendPre('No upcoming events found.');
-          }
-        });
-      }
-
-    </script>
-    <script async defer src="https://apis.google.com/js/api.js" onload=onLoad();>
-    </script>
    <div class="bg-gray w-[100vw] flex flex-col items-center">
       <div name="navbar" class="flex flex-col w-full  px-[8.5vw] max-w-[120rem]">
          <div name="top" class="flex justify-between items-center py-11">
@@ -188,7 +123,7 @@
             </div>
          </div>
       </div>
-      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">Join the New Life Cancer Support Group</h1>
+      <h1 class="text-fontcolor font-header self-center text-4xl pt-14 pb-1 bg-gray w-[100%] flex justify-center">New Life Cancer Support</h1>
       <h2 class="text-fontcolor font-header self-center text-2xl pt-3 pb-9 bg-gray w-[100%] flex justify-center">Serving and guiding you through Biblical counseling</h2>
 
    <!-- ---------- BLUE BOXES ---------- -->
@@ -225,7 +160,7 @@
    
    <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Our cancer support group gathers monthly</h1>
    <p class="text-fontcolor font-body text-center text-lg w-[35%] mt-10">Anyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
-   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">About our group <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">Learn more about us <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
    <style>
       .arrow {
          transition: .3s ease;
@@ -236,10 +171,10 @@
    </style>
 
    <!-- Events section -->
-   <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Upcoming events</h1>
+   <h1 class="text-fontcolor font-header font-medium self-center mt-[100px] text-4xl flex justify-center text-center w-[35%]">Check for upcoming events</h1>
    <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="calendar.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
 
-   <style>
+   <!-- <style>
       #eventImg {
          object-fit: contain;
       }
@@ -285,7 +220,7 @@
       #CARD {
          box-shadow: 0px 1px 31px 2px rgba(0,0,0,0.14);
       }
-   </style>
+   </style> -->
 
    <!-- Footer -->
    <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
