@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+  content: [
+    "index.html"
+  ],
   theme: {
+    screens: {
+      'tablet': '500px',
+      'laptop': '1024px',
+      'desktop': '1280px',
+    },
     colors: {
-      'gray': '#ECECEC',
+      'my-gray': '#ECECEC',
       'brown': '#C7A08A',
-      'blue': '#7E9299',
+      'my-blue': '#7E9299',
       'fontcolor': '#545454',
       'white': '#E6E6E6',
     },
