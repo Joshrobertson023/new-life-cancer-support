@@ -663,6 +663,10 @@ video {
   margin-top: 0px;
 }
 
+.mt-\[65px\] {
+  margin-top: 65px;
+}
+
 .flex {
   display: flex;
 }
@@ -729,6 +733,10 @@ video {
 
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-44 {
