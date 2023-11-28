@@ -31,7 +31,7 @@
             </div>
          </div>
       </div>
-      <hr class="mb-4" /> 
+      <hr class="mb-4 hidden laptop:block" /> 
       <style>
          hr {
             border: 0;
@@ -77,7 +77,7 @@
          </script>
          <div id="navBottom" class="flex justify-between items-center py-11">
             <div name="left" class="">
-               <a href="" class="">
+               <a href="index.html" class="">
                   <img src="./images/Church logo 1.png"class="laptop:ml-[-15px] h-auto w-[200px] laptop:w-[300px]" alt="logo">
                </a>
             </div>
@@ -85,12 +85,12 @@
 
 
                <!-- Mobile link dropdown -->
-               <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="laptop:hidden inline-flex items-center p-2 text-sm font-medium text-center bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none text-fontcolor focus:ring-gray-50" type="button">
+               <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="laptop:hidden inline-flex items-center p-2 text-sm font-medium text-center bg-[#D3D3D3] rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none text-fontcolor focus:ring-gray-50" type="button">
                   Menu
                   </button>
                   
                   <!-- Dropdown menu -->
-                  <div id="dropdownDots" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                  <div id="dropdownDots" class="z-10 hidden bg-white w-[125px] divide-y divide-gray-100 rounded-lg shadow">
                      <ul class="py-2 text-md mr-[50px flex flex-col items-center text-gray-700 dark:text-gray-200 gap-3" aria-labelledby="dropdownDefaultButton">
                         <li>
                            <a href="index.html" class="text-fontcolor border-b-[3px] border-b-fontcolor pb-[3px]">Home</a>
@@ -107,9 +107,9 @@
                         <li>
                            <div class="dropdown">
                               <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
-                              <div class="dropdown-content bg-gray text-center">
-                                 <a target="_blank" href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor duration-100 mb-[5px]">Ride</a>
-                                 <a target="_blank" href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-fontcolor duration-100">Visit</a>
+                              <div id="mobiledropdown" class="dropdown-content text-center ">
+                                 <a target="_blank" href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-fontcolor duration-100 mb-[5px] w-[120px]">Ride</a>
+                                 <a target="_blank" href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-fontcolor duration-100 w-[120px]">Visit</a>
                               </div>
                               <style>
                                  /* #navBottom {
@@ -118,22 +118,22 @@
                                  .dropdown {
                                     overflow:hidden;
                                  } */
-                                 .dropdown-content {
+                                 #mobiledropdown {
                                     display: none;
                                     position: absolute;
-                                    background-color: #ECECEC;
-                                    min-width: 195px;
+                                    width: 50px;
                                     z-index: 1;
                                  }
-                                 .dropdown-content a:hover {
-                                 background-color: #cecece;
+                                 #mobiledropdown a:hover {
+                                    background-color: #cecece;
                                  }
-                                 .dropdown:hover .dropdown-content {
-                                 display: flex;
-                                 flex-direction: column;
-                                 justify-content: start;
-                                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                                 padding: 10px 5px;
+                                 .dropdown:hover #mobiledropdown {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: start;
+                                    width: 50px;
+                                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                    padding: 10px 5px;
                                  }
                               </style>
                            </div>
@@ -193,7 +193,7 @@
             <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-4 laptop:border-8 rounded-xl border-white p-8 laptop:p-8 gap-6">
                <h1 class="text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-3xl">Get a ride to the doctor</h1>
                <p class="text-white font-body text-center text-lg laptop:text-lg">We give rides to people who don’t have access to a ride to the doctor’s office. More text about our giving rides to people to doctor’s offices.</p>
-               <a href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] laptop:text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer rounded">Schedule a Ride</a>
+               <a href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] laptop:text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Ride</a>
             </div>
          </div>
          <div name="IMG" class="w-[250px] mt-[25px] laptop:mt-[0px] laptop:w-[500px] h-[50%] overflow-hidden place-content-center laptop:rounded-l-none rounded-xl">
@@ -214,13 +214,13 @@
             <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-4 laptop:border-8 rounded-xl border-white p-8 laptop:p-8 gap-6">
                <h1 class="text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-3xl">Schedule a visit to your home</h1>
                <p class="text-white font-body text-center text-lg laptop:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam id sunt ut cumque praesentium earum, itaque quis laboriosam placeat alias aperiam, veritatis dicta deserunt modi nihil hic laudantium labore.</p>
-               <a href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Visit</a>
+               <a href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] laptop:text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Visit</a>
             </div>
          </div>
       </div>
    </div>
    
-   <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[35%]">Our cancer support group gathers monthly</h1>
+   <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[40%]">Our cancer support group gathers monthly</h1>
    <p class="px-[25px] text-fontcolor font-body text-center text-lg laptop:w-[35%] mt-10">Anyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
    <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">Learn more about us <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
    <style>
@@ -233,7 +233,7 @@
    </style>
 
    <!-- Events section -->
-   <h1 class=" px-[25px] text-fontcolor font-header text-center self-center text-2xl font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[35%]">Check for upcoming events</h1>
+   <h1 class=" px-[25px] text-fontcolor font-header text-center self-center text-2xl font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[50%]">Check for upcoming events</h1>
    <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="calendar.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
 
    <!-- <style>
@@ -287,31 +287,34 @@
    <!-- Footer -->
    <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
    <div class="bg-my-gray w-[100%] flex items-center justify-center mt-[100px]">
-      <div name="footer" class="flex flex-col laptop:flex-row w-[100%] laptop:w-full px-[35px] gap-14 items-center laptop:gap-0 laptop:px-[210px] max-w-[120rem] py-[50px] justify-between">
+      <div name="footer" class="flex flex-col laptop:flex-row w-[100%] laptop:w-full px-[25px] gap-8 items-center laptop:gap-0 laptop:px-[210px] max-w-[120rem] py-[50px] justify-between">
          <div name="left" class="flex flex-col w-[350px]">
-            <img src="./images/Church logo 1.png" width="300px" height="auto" alt="church logo">
+            <a href="index.html" class="">
+               <img src="./images/Church logo 1.png"class="laptop:ml-[-15px] h-auto w-[200px] laptop:w-[300px]" alt="logo">
+            </a>
+            <!-- <img src="./images/Church logo 1.png" class="laptop:ml-[-15px] h-auto w-[200px] laptop:w-[300px]" alt="church logo"> -->
             <div class="flex gap-5">
-               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-my-gray hover:bg-brown mt-6 text-[16px] h-10 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
-               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[18px] h-10 bg-brown hover:bg-my-gray mt-6 border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
+               <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-my-gray hover:bg-brown mt-6 text-[14px] h-10 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
+               <a href="" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] h-10 bg-brown hover:bg-my-gray mt-6 border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100">Give</a>
             </div>
             <div class="flex gap-5 mt-6">
-               <p class="text-fontcolor font-header w-[130px]">(555) 555-5555</p>
-               <p class="text-fontcolor font-header">examplemail@gmail.com</p>
+               <p class="text-fontcolor font-header text-[12px] laptop:text-[16px] laptop:w-[130px]">(555) 555-5555</p>
+               <p class="text-fontcolor font-header text-[12px] laptop:text-[16px]">examplemail@gmail.com</p>
             </div>
             <div class="flex flex-col gap-2 mt-6">
-               <p class="text-fontcolor font-header mt-4">7:00 PM 3rd Monday of each month</p>
-               <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">New Life Baptist Church location</a>
+               <p class="text-fontcolor font-header mt-4 text-[12px] laptop:text-[16px]">7:00 PM 3rd Monday of each month</p>
+               <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline text-[12px] laptop:text-[16px]">New Life Baptist Church location</a>
             </div>
          </div>
-         <div name="right" class="flex flex-col w-[370px]">
-            <h1 class="text-fontcolor font-header font-medium text-3xl">Sign up for updates</h1>
-            <p class="text-fontcolor font-header mt-6">Sign up to receive news and important udpates</p>
-            <form class="flex flex-col w-[350px]" action="https://gmail.us17.list-manage.com/subscribe/post" method="POST">
+         <div name="right" class="flex flex-col ml-[15px] w-[370px] ">
+            <h1 class="text-fontcolor font-header font-medium text-xl laptop:text-3xl">Sign up for updates</h1>
+            <p class="text-fontcolor font-header mt-3 laptop:mt-6 text-[12px] laptop:text-[16px]">Sign up to receive news and important udpates</p>
+            <form class="flex flex-col w-[250px] laptop:w-[350px]" action="https://gmail.us17.list-manage.com/subscribe/post" method="POST">
                <input type="hidden" name="u" value="c100836f52917fbac08005e70">
                <input type="hidden" name="id" value="1c78798ee4">
                <label class="text-fontcolor font-header mt-6 font-bold">Email</label>
                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" class="h-5 p-4 border-[#BBC8D4] border-2" type="text" title="name" placeholder="Enter your email" required>
-               <button type="submit" name="submit" class="text-[#FFFFFF] hover:text-[#926F5B] w-[125px] text-[18px] h-9 bg-brown hover:bg-my-gray mt-6 border-brown border-[3px] px-7 rounded duration-100">Sign up</button>
+               <button type="submit" name="submit" class="text-[#FFFFFF] hover:text-[#926F5B] w-[125px] text-[16px] h-9 bg-brown hover:bg-my-gray mt-3 laptop:mt-6 border-brown border-[3px] px-7 rounded duration-100">Sign up</button>
             </form>
          </div>
       </div>

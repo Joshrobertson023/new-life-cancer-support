@@ -546,6 +546,14 @@ video {
   position: sticky;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-\[50px\] {
+  right: 50px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -633,6 +641,26 @@ video {
 
 .mb-\[15px\] {
   margin-bottom: 15px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.ml-\[5px\] {
+  margin-left: 5px;
+}
+
+.ml-\[25px\] {
+  margin-left: 25px;
+}
+
+.ml-\[15px\] {
+  margin-left: 15px;
+}
+
+.mt-\[0px\] {
+  margin-top: 0px;
 }
 
 .flex {
@@ -779,6 +807,26 @@ video {
   width: 50%;
 }
 
+.w-\[25px\] {
+  width: 25px;
+}
+
+.w-\[75px\] {
+  width: 75px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -873,6 +921,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -982,6 +1034,21 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
+}
+
+.bg-fontcolor {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 84 84 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#818589\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 133 137 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D3D3D3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 211 211 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1118,6 +1185,10 @@ video {
   padding-bottom: 50px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1170,6 +1241,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .font-bold {
@@ -1319,6 +1398,10 @@ video {
     margin-top: 100px;
   }
 
+  .laptop\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .laptop\:block {
     display: block;
   }
@@ -1357,6 +1440,22 @@ video {
 
   .laptop\:w-\[1000px\] {
     width: 1000px;
+  }
+
+  .laptop\:w-\[130px\] {
+    width: 130px;
+  }
+
+  .laptop\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .laptop\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .laptop\:w-\[50\%\] {
+    width: 50%;
   }
 
   .laptop\:flex-row {
@@ -1415,6 +1514,10 @@ video {
     padding-top: 0.75rem;
   }
 
+  .laptop\:text-left {
+    text-align: left;
+  }
+
   .laptop\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1437,6 +1540,14 @@ video {
   .laptop\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .laptop\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .laptop\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .laptop\:font-normal {
