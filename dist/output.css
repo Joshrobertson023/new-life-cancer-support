@@ -1367,6 +1367,10 @@ video {
     align-items: stretch;
   }
 
+  .laptop\:justify-center {
+    justify-content: center;
+  }
+
   .laptop\:gap-0 {
     gap: 0px;
   }
