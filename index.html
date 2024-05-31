@@ -8,9 +8,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./dist/output.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js" defer></script>
-   <title>New Life Cancer Support Group</title>
+   <title>New Life Cancer Support Team</title>
 </head>
-<body class="flex justify-start flex-col items-center overflow-x-hidden"> 
+<body class="flex justify-center flex-col items-center overflow-x-hidden"> 
    <!-- For containers, specify this: px-[150px] max-w-[120rem] flex flex-col items-center -->
    <div class="bg-my-gray w-[100vw] flex flex-col items-center">
       <div name="navbar" class="flex flex-col w-full px-[25px] laptop:px-[150px] max-w-[120rem]">
@@ -19,7 +19,7 @@
                <!-- Language dropdown goes here -->
                <p class="text-fontcolor font-bold font-header text-[16px]">Contact Us:</p>
                <p class="text-fontcolor font-header">(210) 658-1972</p>
-               <p class="text-fontcolor font-header">staff@nlbconverse.com</p>
+               <p class="text-fontcolor font-header">nlcsgroup@outlook.com</p>
                <div class="flex gap-2">
                   <img src="./images/location-logo.png" class="w-[15px] h-[25px]" alt="location icon">
                   <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
@@ -27,7 +27,7 @@
             </div>
             <div name="right" class="flex justify-between gap-6">
                <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-my-gray hover:bg-brown min-w-[160px] text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
-               <a href="https://buy.stripe.com/eVa2bw2nC2mg7rGbIK" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100" target="_blank">Give</a>
+               <!-- <a href="https://buy.stripe.com/eVa2bw2nC2mg7rGbIK" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100" target="_blank">Give</a> -->
             </div>
          </div>
       </div>
@@ -44,18 +44,22 @@
       </style>
 
    </div>
-   <div name="bottomnav" id="stickyNav" class="flex w-full px-[-5px] justify-center bg-my-gray h-[50px]">
+   <div name="bottomnav" id="stickyNav" class="flex w-full px-[-5px] justify-center bg-my-gray h-[50px] mb-[15px] mtr-[-5px]">
       <div class="flex w-full flex-col justify-center px-[25px]  laptop:px-[150px] max-w-[120rem]">
          <style>
             #stickyNav {
                position: relative;
                top: 0px;
-               transition: .4s;
+               padding-top: 10px;
             }
             #stickyNav.sticky {
                position: sticky;
                top: 0px;
+               padding-top: 0px;
                box-shadow: 0 8px 10px -10px gray;
+            }
+            #stickyNav.sticky #navBottom {
+               margin-bottom: 0px;
             }
             #stickyNav.sticky a {
                padding-top: 5px;
@@ -75,7 +79,7 @@
                   header.classList.remove('sticky');
             })
          </script>
-         <div id="navBottom" class="flex justify-between items-center py-11">
+         <div id="navBottom" class="flex justify-between items-center py-11 mb-[15px]">
             <div name="left" class="">
                <a href="index.html" class="">
                   <img src="./images/Church logo 1.png"class="laptop:ml-[-15px] h-auto w-[200px] laptop:w-[300px]" alt="logo">
@@ -85,25 +89,22 @@
 
 
                <!-- Mobile link dropdown -->
-               <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="laptop:hidden inline-flex items-center p-2 text-sm font-medium text-center bg-[#D3D3D3] rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none text-fontcolor focus:ring-gray-50" type="button">
+               <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="laptop:hidden inline-flex items-center p-2 text-sm font-medium text-center bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none text-fontcolor focus:ring-gray-50" type="button">
                   Menu
                   </button>
                   
                   <!-- Dropdown menu -->
-                  <div id="dropdownDots" class="z-10 hidden bg-white w-[125px] divide-y divide-gray-100 rounded-lg shadow">
+                  <div id="dropdownDots" class="z-10 hidden bg-white w-[125px] divide-y divide-gray-100 rounded-lg shadow ">
                      <ul class="py-2 text-md mr-[50px flex flex-col items-center text-gray-700 dark:text-gray-200 gap-3" aria-labelledby="dropdownDefaultButton">
                         <li>
-                           <a href="index.html" class="text-fontcolor border-b-[3px] border-b-fontcolor pb-[3px]">Home</a>
+                           <a href="index.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor pb-[3px]">Home</a>
                         </li>
                         <li>
-                           <a href="about.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor pb-[3px]">About Us</a>
+                           <a href="about.html" class="text-fontcolor border-b-[3px] border-b-fontcolor pb-[3px]">About Us</a>
                         </li>
-                        <li>
-                           <a href="calendar.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor  pb-[3px]">Calendar</a>
-                        </li>
-                        <li>
+                        <!-- <li>
                            <a href="getinvolved.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor pb-[3px]">Get Involved</a>
-                        </li>
+                        </li> -->
                         <li>
                            <div class="dropdown">
                               <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
@@ -144,8 +145,7 @@
 
                <a href="index.html" class="hidden laptop:block text-fontcolor border-b-[3px] border-b-fontcolor">Home</a>
                <a href="about.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">About Us</a>
-               <a href="calendar.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Calendar</a>
-               <a href="getinvolved.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a>
+               <!-- <a href="getinvolved.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a> -->
                <div class="dropdown">
                   <button href="schedule.html" class="hidden laptop:flex dropbtn text-fontcolor items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
                   <div class="dropdown-content bg-my-gray">
@@ -183,12 +183,25 @@
          </div>
       </div>
    </div>
-   <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl font-bold laptop:font-normal laptop:text-4xl pt-8 laptop:pt-14 pb-1 bg-my-gray w-[100%] flex justify-center">New Life Cancer Support</h1>
-   <h2 class=" px-[25px] text-fontcolor font-header self-center text-xl laptop:text-2xl text-center pt-1 laptop:pt-3 pb-3 laptop:pb-9 bg-my-gray w-[100%] flex justify-center">Serving and guiding you through Biblical counseling</h2>
+   <div id="background-image" class="w-[100%] h-[400px] laptop:h-[700px] items-center justify-center flex flex-col object-cover mt-[-50px]">
+      <style>
+         #background-image {
+            background-image: url("./images/highlights/DSC_0184.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+         }
+      </style>
+         <h1 class=" px-[25px] text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-4xl pt-8 laptop:pt-14 pb-1 w-[100%] flex justify-center items-center">New Life Cancer Support Team</h1>
+         <h1 class=" px-[25px] text-white font-header self-center text-xl font-bold laptop:font-normal laptop:text-2xl pt-8 laptop:pt-14 pb-1 w-[100%] flex justify-center items-center">Example slogan or text</h1>
+      </div>
+   
+   <!-- <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl font-bold laptop:font-normal laptop:text-4xl pt-8 laptop:pt-14 pb-1 bg-my-gray w-[100%] flex justify-center">New Life Cancer Support</h1>
+   <h2 class=" px-[25px] text-fontcolor font-header self-center text-xl laptop:text-2xl text-center pt-1 laptop:pt-3 pb-3 laptop:pb-9 bg-my-gray w-[100%] flex justify-center">Serving and guiding you through Biblical counseling</h2> -->
 
    <!-- ---------- BLUE BOXES ---------- -->
-   <div class="px-[25px] laptop:px-[150px] max-w-[120rem] flex flex-col justify-center items-center mt-[35px] laptop:mt-[100px]">
-      <div name="BLUE BOX" class="flex flex-wrap flex-col justify-center laptop:flex-row items-center laptop:items-stretch bg-blue rounded-xl">
+      <div name="BLUE BOX" class="flex flex-wrap mt-[75px] justify-between items-center laptop:flex-row items-center laptop:items-stretch bg-blue rounded-xl">
          <div class="bg-my-blue flex laptop:rounded-r-none justify-center items-center w-[350px] laptop:w-[500px] p-4 laptop:p-8 rounded-xl">
             <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-4 laptop:border-8 rounded-xl border-white p-8 laptop:p-8 gap-6">
                <h1 class="text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-3xl">Get a ride to the doctor</h1>
@@ -196,17 +209,20 @@
                <a href="https://calendly.com/therealjoshrobertson/drive-to-doctor" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] laptop:text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Ride</a>
             </div>
          </div>
-         <div name="IMG" class="w-[250px] mt-[25px] laptop:mt-[0px] laptop:w-[500px] h-[50%] overflow-hidden place-content-center laptop:rounded-l-none rounded-xl">
-            <!-- Need to optimize this image -->
-            <img src="./images/car ride.jpg" class="object-fill" alt="person giving ride">
+         <div class="order-2 laptop:order-1">
+            <div class="order-1 laptop:order-2 bg-my-blue flex justify-center items-center w-[350px] laptop:rounded-l-none laptop:w-[500px] p-4 laptop:p-8 rounded-xl">
+               <div name="RIDE TEXT" class="flex flex-col h-[100%] text-center justify-center items-center border-4 laptop:border-8 rounded-xl border-white p-8 laptop:p-8 gap-6">
+                  <h1 class="text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-3xl">Schedule a visit to your home</h1>
+                  <p class="text-white font-body text-center text-lg laptop:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam id sunt ut cumque praesentium earum, itaque quis laboriosam placeat alias aperiam, veritatis dicta deserunt modi nihil hic laudantium labore.</p>
+                  <a href="https://calendly.com/therealjoshrobertson/schedule-a-visit-to-your-home" class="text-[#FFFFFF] hover:text-[#926F5B] text-[16px] laptop:text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100 cursor-pointer">Schedule a Visit</a>
+               </div>
+            </div>
          </div>
       </div>
-   </div>
-   <div class="px-[150px] max-w-[120rem] flex flex-col items-center mt-[50px]">
+   <!-- <div class="px-[150px] max-w-[120rem] flex flex-col items-center mt-[50px]">
       <div name="BLUE BOX" class="flex flex-wrap laptop:flex-row items-center justify-center laptop:items-stretch bg-blue rounded-xl">
          <div class="order-2 laptop:order-1">
             <div name="IMG" class="w-[250px] mt-[25px] laptop:mt-[0px] laptop:w-[500px] overflow-hidden place-content-center laptop:rounded-r-none rounded-xl">
-               <!-- Need to optimize this image -->
                <img src="./images/house visit.jpg" class="object-fill" alt="visiting at home">
          </div>
          </div>
@@ -218,11 +234,27 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
+   <div id="background-image2" class="w-[100%] h-[400px] laptop:h-[700px] items-center flex flex-col  justify-center object-cover mt-[75px]">
+      <style>
+         #background-image2 {
+            background-image: url("./images/highlights/IMG_20230919_163313.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+         }
+      </style>
+         <h1 class=" px-[25px] text-white font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl pb-1 w-[100%] flex justify-center laptop:w-[40%]">Our cancer support team gathers monthly</h1>
+         <p class="px-[25px] text-white font-body text-center text-lg laptop:w-[35%] mt-10">Everyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
+         <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center  text-white items-center mr-[5px] mt-7 text-lg font-header">Learn more about us <img width="15px" id="rotate90" height="15px" src="./images/white-icon.png" alt="arrow" class="arrow rotate-90 ml-[5px]"></a>
+         <style>
+            #rotate90 {
+               transform: rotate(270deg);
+            }
+         </style>
+      </div>
    
-   <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[40%]">Our cancer support group gathers monthly</h1>
-   <p class="px-[25px] text-fontcolor font-body text-center text-lg laptop:w-[35%] mt-10">Anyone is welcome to join the New Life Cancer Support Team. We meet at 7:00 PM on the 3rd Monday night of each month in the fellowship hall of New Life Baptist Church. <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" class="underline" target="_blank">Get directions.</a></p>
-   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="about.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">Learn more about us <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
    <style>
       .arrow {
          transition: .3s ease;
@@ -233,8 +265,8 @@
    </style>
 
    <!-- Events section -->
-   <h1 class=" px-[25px] text-fontcolor font-header text-center self-center text-2xl font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-1 w-[100%] flex justify-center laptop:w-[50%]">Check for upcoming events</h1>
-   <a onmouseover="moveRight();" onmouseleave="moveLeft();" href="calendar.html" class="link flex justify-center items-center mr-[5px] mt-7 text-lg font-header">See full calendar <img src="./images/icon/navigation/arrow_back_24px.png" alt="arrow" class="arrow"></a>
+   <h1 class=" px-[5px] text-fontcolor font-header text-center self-center text-2xl font-bold laptop:font-normal laptop:text-4xl mt-[75px] laptop:pt-14 pb-50 w-[100%] flex justify-center laptop:w-[50%]">Calendar</h1>
+   <iframe class="mt-[50px] h-[500px] laptop:h-[700px] w-[80%] laptop:w-[1200px]" src="https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/5d0a23ff-b312-4f15-87f8-dce0e5831ff1/cid-75B01634F0BEB6A8/index.html" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
    <!-- <style>
       #eventImg {

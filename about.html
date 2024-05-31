@@ -19,7 +19,7 @@
                <!-- Language dropdown goes here -->
                <p class="text-fontcolor font-bold font-header text-[16px]">Contact Us:</p>
                <p class="text-fontcolor font-header">(210) 658-1972</p>
-               <p class="text-fontcolor font-header">staff@nlbconverse.com</p>
+               <p class="text-fontcolor font-header">nlcsgroup@outlook.com</p>
                <div class="flex gap-2">
                   <img src="./images/location-logo.png" class="w-[15px] h-[25px]" alt="location icon">
                   <a href="https://maps.app.goo.gl/6w9NrEQ5zjAcCyLPA" target="_blank" class="text-fontcolor font-header underline">101 North St, Converse, TX 78109</p>
@@ -27,11 +27,11 @@
             </div>
             <div name="right" class="flex justify-between gap-6">
                <a href="https://www.nlbconverse.com/" class="text-[#926F5B] hover:text-my-gray hover:bg-brown min-w-[160px] text-[18px] h-12 border-[3px] border-brown flex px-7 justify-center items-center rounded duration-100" target="_blank">Our Church</a>
-               <a href="https://buy.stripe.com/eVa2bw2nC2mg7rGbIK" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100" target="_blank">Give</a>
+               <!-- <a href="https://buy.stripe.com/eVa2bw2nC2mg7rGbIK" class="text-[#FFFFFF] hover:text-[#926F5B] text-[20px] h-12 bg-brown hover:bg-my-gray border-brown border-[3px] px-7 flex justify-center items-center rounded duration-100" target="_blank">Give</a> -->
             </div>
          </div>
       </div>
-      <hr class="mb-4" /> 
+      <hr class="mb-4 hidden laptop:block" /> 
       <style>
          hr {
             border: 0;
@@ -50,11 +50,12 @@
             #stickyNav {
                position: relative;
                top: 0px;
-               transition: .4s;
+               padding-top: 10px;
             }
             #stickyNav.sticky {
                position: sticky;
                top: 0px;
+               padding-top: 0px;
                box-shadow: 0 8px 10px -10px gray;
             }
             #stickyNav.sticky #navBottom {
@@ -101,12 +102,9 @@
                         <li>
                            <a href="about.html" class="text-fontcolor border-b-[3px] border-b-fontcolor pb-[3px]">About Us</a>
                         </li>
-                        <li>
-                           <a href="calendar.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor  pb-[3px]">Calendar</a>
-                        </li>
-                        <li>
+                        <!-- <li>
                            <a href="getinvolved.html" class="text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor pb-[3px]">Get Involved</a>
-                        </li>
+                        </li> -->
                         <li>
                            <div class="dropdown">
                               <button href="schedule.html" class=" dropbtn text-fontcolor flex items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
@@ -147,8 +145,7 @@
 
                <a href="index.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Home</a>
                <a href="about.html" class="hidden laptop:block text-fontcolor border-b-[3px] border-b-fontcolor">About Us</a>
-               <a href="calendar.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Calendar</a>
-               <a href="getinvolved.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a>
+               <!-- <a href="getinvolved.html" class="hidden laptop:block text-fontcolor hover:border-b-[3px] hover:border-b-fontcolor">Get Involved</a> -->
                <div class="dropdown">
                   <button href="schedule.html" class="hidden laptop:flex dropbtn text-fontcolor items-center gap-2" onclick="dropdown();">Schedule a Ride or Visit<img width="18px" height="18px" src="./images/line-angle-down-icon.png"></button>
                   <div class="dropdown-content bg-my-gray">
@@ -189,16 +186,15 @@
    <div id="background-image" class="w-[100%] h-[400px] laptop:h-[700px] flex object-cover mt-[-50px]">
       <style>
          #background-image {
-            background-image: url("./images/aboutusimage.jpg");
+            background-image: url("./images/highlights/DSC_0176.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
          }
       </style>
          <h1 class=" px-[25px] text-white font-header self-center text-2xl font-bold laptop:font-normal laptop:text-4xl pt-8 laptop:pt-14 pb-1 w-[100%] flex justify-center items-center">About Us</h1>
    </div>
-   <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl mt-[25px] laptop:pt-14 pb-1 w-[100%] laptop:text-left flex  laptop:w-[35%]">Our Staff</h1>
-   <p class="px-[25px] text-fontcolor font-body text-lg laptop:w-[35%] mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ad itaque, ipsa quod esse perspiciatis et. Dolores architecto harum, fuga voluptatibus, consectetur, cumque quidem cupiditate explicabo odio nulla beatae amet?</p>
    <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl laptop:pt-14 pb-1 w-[100%] laptop:text-left flex  laptop:w-[35%]">Purpose of this support team</h1>
    <p class="px-[25px] text-fontcolor font-body text-lg laptop:w-[35%] mt-4">For many human problems, there are no easy answers or easy cures. Even after the best professional help has been obtained, a person might be left with difficulties too great to handle alone. In this situation, millions of people have found much needed personal support in mutual help groups. It is in these groups, whose members share common concerns, they are offered an important aid to recovery, understanding and the help of others who have gone through similar experiences.</p>
    <h1 class=" px-[25px] text-fontcolor font-header self-center text-2xl text-center font-bold laptop:font-normal laptop:text-4xl laptop:pt-14 pb-1 w-[100%] laptop:text-left flex  laptop:w-[35%]">What is mutual support?</h1>
